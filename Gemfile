@@ -63,3 +63,5 @@ group :test do
 end
 
 gem "shakapacker", "= 7.0"
+
+gem "react_on_rails", "= 13.4"
