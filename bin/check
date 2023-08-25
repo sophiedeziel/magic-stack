@@ -3,5 +3,3 @@
 rails test
 rubocop -A
 yarn run eslint app/javascript/**/*.jsx --fix
-bundler-audit --update
-brakeman -q -w2

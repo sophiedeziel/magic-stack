@@ -1,21 +1,20 @@
 import PropTypes from 'prop-types'
-import React, { useState } from 'react'
-import style from './App.module.css'
+import React from 'react'
+
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
+
+import Greeting from './components/Greeting'
+
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache()
+})
 
 export default function App (props) {
-  const [name, setName] = useState(props.name)
-
   return (
-    <div>
-      <h3>Hello, {name}!</h3>
-      <hr />
-      <form>
-        <label className={style.bright} htmlFor="name">
-          Say hello to:
-          <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-        </label>
-      </form>
-    </div>
+    <ApolloProvider client={client}>
+      <Greeting />
+    </ApolloProvider>
   )
 };
 
