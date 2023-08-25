@@ -65,6 +65,8 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'brakeman', '~> 5.1', require: false
+  gem 'bundler-audit', '~> 0.8', require: false
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'

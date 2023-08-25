@@ -63,12 +63,12 @@ jobs:
         with:
           bundler-cache: true
       # Add or replace any other lints here
-      # - name: Security audit dependencies
-      #   run: bin/bundler-audit --update
-      # - name: Security audit application code
-      #   run: bin/brakeman -q -w2
+      - name: Security audit dependencies
+        run: bin/bundler-audit --update
+      - name: Security audit application code
+        run: bin/brakeman -q -w2
       - name: Lint Ruby files
-        run: rubocop --parallel
+        run: bin/rubocop --parallel
 
   lint-javascript:
     runs-on: ubuntu-latest
