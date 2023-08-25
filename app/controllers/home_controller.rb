@@ -2,6 +2,6 @@
 
 class HomeController < ApplicationController
   def index
-    @app_props = { }
+    @app_props = {}
   end
 end
