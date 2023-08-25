@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 rails test
-rubocop -a
+rubocop -A
 yarn run eslint app/javascript/**/*.jsx --fix
 bundler-audit --update
 brakeman -q -w2
