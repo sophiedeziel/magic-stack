@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+rails test
+rubocop -a
+yarn run eslint app/javascript/**/*.jsx --fix

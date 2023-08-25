@@ -1,8 +1,8 @@
-import ReactOnRails from 'react-on-rails';
+import ReactOnRails from 'react-on-rails'
 
-import App from '../ui/App';
+import App from '../ui/App'
 
 // This is how react_on_rails can see the HelloWorld in the browser.
 ReactOnRails.register({
-  App,
-});
+  App
+})
