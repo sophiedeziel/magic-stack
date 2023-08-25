@@ -1,5 +1,22 @@
 # magic-stack
 
+New repository checklist
+
+- [ ] Add [branch protection rules](settings/branches)
+  -  `main`:
+    - require PR and require reviews
+    - require checks
+    - Allow force push because I am impulsive
+- [ ] Enable [auto-merging](settings/)
+- [ ] Allow Github Actions to [approve PRs](settings/actions)
+- [ ] [rename the Rails app](https://github.com/morshedalam/rename)
+- [ ] Chose a database
+- [ ] Chose a design language librairy
+- [ ] have fun!
+
+
+## The stack
+
 - Rails
 - React
 - react_on_rails
