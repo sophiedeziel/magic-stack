@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types';
-import React, { useState } from 'react';
-import style from './App.module.css';
+import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+import style from './App.module.css'
 
-const App = (props) => {
-  const [name, setName] = useState(props.name);
+export default function App (props) {
+  const [name, setName] = useState(props.name)
 
   return (
     <div>
@@ -16,11 +16,9 @@ const App = (props) => {
         </label>
       </form>
     </div>
-  );
+  )
 };
 
 App.propTypes = {
-  name: PropTypes.string.isRequired, // this is passed from the Rails view
-};
-
-export default App;
+  name: PropTypes.string // this is passed from the Rails view
+}
