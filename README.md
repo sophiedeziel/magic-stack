@@ -14,6 +14,12 @@
 
 For using this template, consider renaming the Rails app: https://github.com/morshedalam/rename
 
+I love react librairies for design languages, but I left them out of this repo because it's a case-by-case thing.
+Here's a small list of things I tried in the past and would consider using again:
+- AntDesign
+- Tailwind
+- NextUI
+
 ## CLI collection:
 
 ```
