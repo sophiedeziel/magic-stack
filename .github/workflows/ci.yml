@@ -1,0 +1,137 @@
+# This workflow uses actions that are not certified by GitHub.  They are
+# provided by a third-party and are governed by separate terms of service,
+# privacy policy, and support documentation.
+#
+# This workflow will install a prebuilt Ruby version, install dependencies, and
+# run tests and linters.
+name: "CI"
+on:
+  push:
+    branches: [ 'main' ]
+  pull_request:
+    branches: [ main ]
+jobs:
+
+  rspec:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@250fcd6a742febb1123a77a841497ccaa8b9e939 # v1.92
+        with:
+          bundler-cache: true
+
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/node_modules
+            public/assets/
+            public/packs-test/
+            tmp/shakapacker
+          key: ${{ runner.os }}-assets-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-assets-
+
+      - uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version: 18.0.0
+
+      - name: 'Yarn Install'
+        run: yarn install
+
+      - name: Run tests
+        env:
+          RAILS_ENV: test
+          DB_USER: tentacles_test
+          DB_PASSWORD: tentacles_test
+        run: bin/rails test
+
+  lint-ruby:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@250fcd6a742febb1123a77a841497ccaa8b9e939 # v1.92
+        with:
+          bundler-cache: true
+      # Add or replace any other lints here
+      # - name: Security audit dependencies
+      #   run: bin/bundler-audit --update
+      # - name: Security audit application code
+      #   run: bin/brakeman -q -w2
+      - name: Lint Ruby files
+        run: rubocop --parallel
+
+  lint-javascript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/node_modules
+            public/assets/
+            public/packs-test/
+            tmp/shakapacker
+          key: ${{ runner.os }}-assets-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-assets-
+
+      - uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version: 18.0.0
+
+      - name: 'Yarn Install'
+        run: yarn install
+
+      - name: Lint Javascript files
+        run: bin/yarn run eslint app/javascript/**/*.jsx
+
+  assets-compile:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: production
+      SECRET_KEY_BASE: precompile_placeholder
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@250fcd6a742febb1123a77a841497ccaa8b9e939 # v1.92
+        with:
+          bundler-cache: true
+
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/node_modules
+            public/assets/
+            public/packs-test/
+            tmp/shakapacker
+          key: ${{ runner.os }}-assets-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-assets-
+
+      - uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version: 18.0.0
+
+      - name: 'Yarn Install'
+        run: yarn install
+
+      - name: Compile assets (js and css)
+        run: bin/rails shakapacker:compile
