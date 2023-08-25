@@ -68,7 +68,7 @@ jobs:
       - name: Security audit application code
         run: bin/brakeman -q -w2
       - name: Lint Ruby files
-        run: bin/bundle exec rubocop rubocop --parallel
+        run: bin/rubocop --parallel
 
   lint-javascript:
     runs-on: ubuntu-latest
