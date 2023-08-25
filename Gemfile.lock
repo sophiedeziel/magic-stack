@@ -137,7 +137,7 @@ GEM
       ast (~> 2.4.1)
       racc
     public_suffix (5.0.3)
-    puma (5.6.7)
+    puma (6.3.1)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
@@ -255,7 +255,7 @@ DEPENDENCIES
   capybara
   debug
   jbuilder
-  puma (~> 5.0)
+  puma (~> 6.3)
   rails (~> 7.0.7, >= 7.0.7.2)
   react_on_rails (= 13.4)
   rubocop (~> 1.56)
