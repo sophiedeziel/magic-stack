@@ -22,8 +22,6 @@ GraphQL/ObjectDescription:
   Enabled: true
   Exclude:
     - '**/*_schema.rb'
-    - '**/base_*.rb'
+    - '**/base/*.rb'
+    - '**/root_types/*.rb'
     - '**/graphql/query_context.rb'
-    - 'app/graphql/types/mutation_type.rb'
-    - 'app/graphql/types/node_type.rb'
-    - 'app/graphql/types/query_type.rb'

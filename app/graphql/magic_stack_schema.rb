@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 class MagicStackSchema < GraphQL::Schema
-  mutation(Types::MutationType)
-  query(Types::QueryType)
+  mutation(RootTypes::MutationType)
+  query(RootTypes::QueryType)
 
   # For batch-loading (see https://graphql-ruby.org/dataloader/overview.html)
   use GraphQL::Dataloader
 
-  max_complexity 42
-  max_depth 10
+  max_complexity 300
+  max_depth 100
 
   # GraphQL-Ruby calls this when something goes wrong while running a query:
 

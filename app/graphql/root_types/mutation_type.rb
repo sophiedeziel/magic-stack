@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module Types
-  class MutationType < Types::BaseObject
+module RootTypes
+  class MutationType < Base::Object
     # TODO: remove me
     field :test_field, String, null: false,
                                description: 'An example field added by the generator'
