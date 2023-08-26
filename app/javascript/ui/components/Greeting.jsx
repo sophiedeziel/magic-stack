@@ -11,7 +11,7 @@ const GET_TEST_STRING = gql`
 
 export default function Greeting () {
   const [name, setName] = useState('')
-  const { loading, error, data } = useQuery(GET_TEST_STRING)
+  const { loading, error, data } = useQuery(GET_TEST_STRING, { ssr: true })
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error : {error.message}</p>
