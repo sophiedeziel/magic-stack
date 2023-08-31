@@ -101,7 +101,7 @@ GEM
     graphiql-rails (1.9.0)
       railties
       sprockets-rails
-    graphql (2.0.26)
+    graphql (2.1.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -267,7 +267,7 @@ DEPENDENCIES
   capybara
   debug
   graphiql-rails
-  graphql (~> 2.0)
+  graphql (~> 2.1)
   jbuilder
   puma (~> 6.3)
   rails (~> 7.0.7, >= 7.0.7.2)
