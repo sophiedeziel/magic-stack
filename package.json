@@ -45,7 +45,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-n": "^16.2.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.33.2",
     "react-refresh": "^0.14.0",
