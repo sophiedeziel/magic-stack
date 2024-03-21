@@ -74,4 +74,4 @@ group :test do
 end
 
 gem 'graphiql-rails', group: :development
-gem 'graphql', '~> 2.2'
+gem 'graphql', '~> 2.3'
