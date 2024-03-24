@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "ruby_lsp",
+      "name": "console",
+      "request": "launch",
+      "program": "bin/rails console",
+    },
+    {
+      "type": "ruby_lsp",
+      "name": "rails server",
+      "request": "launch",
+      "program": "bin/rails server",
+    },
+    {
+      "type": "ruby_lsp",
+      "request": "attach",
+      "name": "Attach to existing server",
+    },
+  ],
+}
