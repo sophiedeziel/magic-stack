@@ -109,12 +109,14 @@ GEM
     erubi (1.13.0)
     execjs (2.8.1)
     ffi (1.15.5)
+    fiber-storage (0.1.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     graphiql-rails (1.10.0)
       railties
-    graphql (2.3.11)
+    graphql (2.3.12)
       base64
+      fiber-storage
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.2)
