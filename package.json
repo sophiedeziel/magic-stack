@@ -48,7 +48,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.34.1",
-    "react-refresh": "^0.14.0",
+    "react-refresh": "^0.14.2",
     "webpack-dev-server": "4"
   }
 }
