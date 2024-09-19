@@ -16,7 +16,7 @@
     "css-loader": "^6.11.0",
     "css-minimizer-webpack-plugin": "^6.0.0",
     "eslint": "^8.57.1",
-    "graphql": "^16.8.1",
+    "graphql": "^16.9.0",
     "mini-css-extract-plugin": "^2.8.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
