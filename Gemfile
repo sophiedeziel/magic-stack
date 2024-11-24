@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.1.3'
+gem 'rails', '~> 7.2.2'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -48,7 +48,7 @@ gem 'react_on_rails', '= 13.4'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'rubocop', '~> 1.63'
+  gem 'rubocop', '~> 1.68'
   gem 'rubocop-graphql', require: false
   gem 'rubocop-rails', require: false
 end
@@ -66,12 +66,12 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'brakeman', '~> 6.1', require: false
-  gem 'bundler-audit', '~> 0.8', require: false
+  gem 'brakeman', '~> 6.2', require: false
+  gem 'bundler-audit', '~> 0.9', require: false
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
 
 gem 'graphiql-rails', group: :development
-gem 'graphql', '~> 2.3'
+gem 'graphql', '~> 2.4'

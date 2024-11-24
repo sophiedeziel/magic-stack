@@ -15,8 +15,8 @@
     "compression-webpack-plugin": "11",
     "css-loader": "^6.11.0",
     "css-minimizer-webpack-plugin": "^6.0.0",
-    "eslint": "^8.57.0",
-    "graphql": "^16.8.1",
+    "eslint": "^8.57.1",
+    "graphql": "^16.9.0",
     "mini-css-extract-plugin": "^2.8.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -26,7 +26,7 @@
     "shakapacker": "7.2.3",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "5",
-    "trix": "^2.1.1",
+    "trix": "^2.1.4",
     "webpack": "5",
     "webpack-assets-manifest": "5",
     "webpack-cli": "5",
@@ -46,9 +46,9 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-react": "^7.34.1",
-    "react-refresh": "^0.14.0",
+    "react-refresh": "^0.14.2",
     "webpack-dev-server": "4"
   }
 }
