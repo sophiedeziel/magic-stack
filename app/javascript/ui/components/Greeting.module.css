@@ -2,3 +2,8 @@
     color: green;
     font-weight: bold;
 }
+
+.bold {
+    font-weight: bold;
+    color: #ff3333;
+}

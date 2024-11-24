@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from './Greeting.module.css'
+import * as style from './Greeting.module.css'
 
 import { useQuery, gql } from '@apollo/client'
 
@@ -18,7 +18,7 @@ export default function Greeting () {
 
   return (
     <div>
-      <h3>{data.testField}, {name}!</h3>
+      <h3 className={style.bold}>{data.testField}, {name}!</h3>
       <hr />
       <form>
         <label className={style.bright} htmlFor="name">
