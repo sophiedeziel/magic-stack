@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from './Greeting.module.css'
+import * as style from './Greeting.module.css'
 
 import { useQuery, gql } from '@apollo/client'
 
