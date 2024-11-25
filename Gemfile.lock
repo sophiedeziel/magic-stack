@@ -103,9 +103,12 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    diff-lcs (1.5.1)
     drb (2.2.1)
     erubi (1.13.0)
     execjs (2.10.0)
+    factory_bot (6.5.0)
+      activesupport (>= 5.0.0)
     ffi (1.17.0-x86_64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
     fiber-storage (1.0.0)
@@ -222,6 +225,26 @@ GEM
     reline (0.5.11)
       io-console (~> 0.5)
     rexml (3.3.9)
+    rspec-core (3.13.2)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.3)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-its (2.0.0)
+      rspec-core (>= 3.13.0)
+      rspec-expectations (>= 3.13.0)
+    rspec-mocks (3.13.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-rails (7.1.0)
+      actionpack (>= 7.0)
+      activesupport (>= 7.0)
+      railties (>= 7.0)
+      rspec-core (~> 3.13)
+      rspec-expectations (~> 3.13)
+      rspec-mocks (~> 3.13)
+      rspec-support (~> 3.13)
+    rspec-support (3.13.1)
     rubocop (1.68.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -234,6 +257,8 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.33.0)
       parser (>= 3.3.1.0)
+    rubocop-factory_bot (2.26.1)
+      rubocop (~> 1.61)
     rubocop-graphql (1.5.4)
       rubocop (>= 1.50, < 2)
     rubocop-rails (2.27.0)
@@ -241,6 +266,11 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.52.0, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
+    rubocop-rspec (3.2.0)
+      rubocop (~> 1.61)
+    rubocop-rspec_rails (2.30.0)
+      rubocop (~> 1.61)
+      rubocop-rspec (~> 3, >= 3.0.1)
     ruby-progressbar (1.13.0)
     ruby-vips (2.2.2)
       ffi (~> 1.12)
@@ -302,6 +332,7 @@ DEPENDENCIES
   bundler-audit (~> 0.9)
   capybara
   debug
+  factory_bot (~> 6.5)
   graphiql-rails
   graphql (~> 2.4)
   image_processing (~> 1.13)
@@ -309,9 +340,14 @@ DEPENDENCIES
   puma (~> 6.4)
   rails (~> 7.2.2)
   react_on_rails (= 14.0.5)
+  rspec-its (~> 2.0)
+  rspec-rails (~> 7.1)
   rubocop (~> 1.68)
+  rubocop-factory_bot
   rubocop-graphql
   rubocop-rails
+  rubocop-rspec
+  rubocop-rspec_rails
   selenium-webdriver
   shakapacker (= 8.0.2)
   sprockets-rails
