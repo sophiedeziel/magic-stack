@@ -51,6 +51,7 @@ group :development, :test do
   gem 'rubocop', '~> 1.68'
   gem 'rubocop-graphql', require: false
   gem 'rubocop-rails', require: false
+  gem 'rspec-rails', '~> 7.1.0'
 end
 
 group :development do
