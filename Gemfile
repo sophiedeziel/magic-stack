@@ -48,12 +48,15 @@ gem 'react_on_rails', '14.0.5'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'rubocop', '~> 1.68'
-  gem 'rubocop-graphql', require: false
-  gem 'rubocop-rails', require: false
-  gem 'rspec-rails', '~> 7.1'
   gem 'factory_bot', '~> 6.5'
   gem 'rspec-its', '~> 2.0'
+  gem 'rspec-rails', '~> 7.1'
+  gem 'rubocop', '~> 1.68'
+  gem 'rubocop-factory_bot', require: false
+  gem 'rubocop-graphql', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rubocop-rspec_rails', require: false
 end
 
 group :development do
