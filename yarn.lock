@@ -5846,10 +5846,10 @@ tree-dump@^1.0.1:
   resolved "https://registry.yarnpkg.com/tree-dump/-/tree-dump-1.0.2.tgz#c460d5921caeb197bde71d0e9a7b479848c5b8ac"
   integrity sha512-dpev9ABuLWdEubk+cIaI9cHwRNNDjkBBLXTwI4UCUFdQ5xXKqNXoK4FEciw/vxf+NQ7Cb7sGUyeUtORvHIdRXQ==
 
-trix@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.4.tgz#a2f1e37fec03c9050bc7ba1d56056e606389a46f"
-  integrity sha512-f0AGnqBV8J2qW+fCtVU71JmvzjcxnO5Xbbd6Cl2KrHVRpgXKDqNGTmDmQzNHWU7T2OgtwHwvNiN+OIf3Z3KmHQ==
+trix@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.8.tgz#b9383af8cd9c1a0a0818d6b4e0c9e771bf7fd564"
+  integrity sha512-y1h5mKQcjMsZDsUOqOgyIUfw+Z31u4Fe9JqXtKGUzIC7FM9cTpxZFFWxQggwXBo18ccIKYx1Fn9toVO5mCpn9g==
 
 ts-invariant@^0.10.3:
   version "0.10.3"
