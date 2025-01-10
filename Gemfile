@@ -51,7 +51,7 @@ group :development, :test do
   gem 'factory_bot', '~> 6.5'
   gem 'rspec-its', '~> 2.0'
   gem 'rspec-rails', '~> 7.1'
-  gem 'rubocop', '~> 1.69'
+  gem 'rubocop', '~> 1.70'
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-graphql', require: false
   gem 'rubocop-rails', require: false
