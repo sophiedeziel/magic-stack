@@ -43,7 +43,7 @@ gem 'image_processing', '~> 1.13'
 
 gem 'shakapacker', '8.0.2'
 
-gem 'react_on_rails', '14.1.0'
+gem 'react_on_rails', '14.1.1'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
