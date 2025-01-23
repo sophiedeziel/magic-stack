@@ -247,7 +247,7 @@ GEM
       rspec-mocks (~> 3.13)
       rspec-support (~> 3.13)
     rspec-support (3.13.1)
-    rubocop (1.70.0)
+    rubocop (1.71.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -348,7 +348,7 @@ DEPENDENCIES
   react_on_rails (= 14.1.1)
   rspec-its (~> 2.0)
   rspec-rails (~> 7.1)
-  rubocop (~> 1.70)
+  rubocop (~> 1.71)
   rubocop-factory_bot
   rubocop-graphql
   rubocop-rails
