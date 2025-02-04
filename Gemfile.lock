@@ -159,16 +159,16 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.1-x86_64-darwin)
+    nokogiri (1.18.2-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.1-x86_64-linux-gnu)
+    nokogiri (1.18.2-x86_64-linux-gnu)
       racc (~> 1.4)
     package_json (0.1.0)
     parallel (1.26.3)
     parser (3.3.7.0)
       ast (~> 2.4.1)
       racc
-    psych (5.2.2)
+    psych (5.2.3)
       date
       stringio
     public_suffix (6.0.1)
@@ -285,7 +285,7 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     semantic_range (3.1.0)
-    shakapacker (8.0.2)
+    shakapacker (8.1.0)
       activesupport (>= 5.2)
       package_json
       rack-proxy (>= 0.6.1)
@@ -356,7 +356,7 @@ DEPENDENCIES
   rubocop-rspec
   rubocop-rspec_rails
   selenium-webdriver
-  shakapacker (= 8.0.2)
+  shakapacker (= 8.1.0)
   sprockets-rails
   sqlite3 (~> 2.5)
   tzinfo-data
