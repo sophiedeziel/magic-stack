@@ -41,7 +41,7 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 1.14'
 
-gem 'shakapacker', '8.0.2'
+gem 'shakapacker', '8.1.0'
 
 gem 'react_on_rails', '14.1.1'
 
