@@ -3,9 +3,10 @@ import React from 'react'
 import {
   createBrowserRouter,
   RouterProvider,
-  matchRoutes
-} from 'react-router-dom'
-import { createStaticRouter, createStaticHandler } from 'react-router-dom/server'
+  matchRoutes,
+  createStaticRouter,
+  createStaticHandler
+} from 'react-router'
 
 import Greeting from '../components/Greeting'
 
