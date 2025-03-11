@@ -27,7 +27,7 @@
     "shakapacker": "8.1.0",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "5",
-    "trix": "^2.1.12",
+    "trix": "^2.1.13",
     "webpack": "5",
     "webpack-assets-manifest": "5",
     "webpack-cli": "6",
