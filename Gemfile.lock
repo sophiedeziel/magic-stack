@@ -151,7 +151,7 @@ GEM
       benchmark
       logger
     mini_mime (1.1.5)
-    minitest (5.25.4)
+    minitest (5.25.5)
     msgpack (1.7.2)
     net-imap (0.5.6)
       date
@@ -297,7 +297,7 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     semantic_range (3.1.0)
-    shakapacker (8.1.0)
+    shakapacker (8.2.0)
       activesupport (>= 5.2)
       package_json
       rack-proxy (>= 0.6.1)
@@ -368,7 +368,7 @@ DEPENDENCIES
   rubocop-rspec
   rubocop-rspec_rails
   selenium-webdriver
-  shakapacker (= 8.1.0)
+  shakapacker (= 8.2.0)
   sprockets-rails
   sqlite3 (~> 2.6)
   tzinfo-data
