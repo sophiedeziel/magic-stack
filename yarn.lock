@@ -5137,10 +5137,10 @@ react-on-rails@14.2.0:
   resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-14.2.0.tgz#89d57b6fb7c2a6bb0da58acf142895cfd0e21dce"
   integrity sha512-p2TgJ9CviabQcjL67f5uB05zf6IUwh25K9fZTHN+x1/k0cQDfZt4/uuaVXXWWLMXxPrsf4EJxl43SoG1F2j3hA==
 
-react-refresh@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.16.0.tgz"
-  integrity sha512-FPvF2XxTSikpJxcr+bHut2H4gJ17+18Uy20D5/F+SKzFap62R3cM5wH6b8WN3LyGSYeQilLEcJcR1fjBSI2S1A==
+react-refresh@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.17.0.tgz#b7e579c3657f23d04eccbe4ad2e58a8ed51e7e53"
+  integrity sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==
 
 react-router@^7.4.0:
   version "7.4.0"
