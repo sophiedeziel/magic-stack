@@ -116,7 +116,7 @@ GEM
       activesupport (>= 6.1)
     graphiql-rails (1.10.4)
       railties
-    graphql (2.4.15)
+    graphql (2.5.0)
       base64
       fiber-storage
       logger
@@ -356,7 +356,7 @@ DEPENDENCIES
   debug
   factory_bot (~> 6.5)
   graphiql-rails
-  graphql (~> 2.4)
+  graphql (~> 2.5)
   image_processing (~> 1.14)
   jbuilder
   puma (~> 6.6)

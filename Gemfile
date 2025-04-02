@@ -80,4 +80,4 @@ group :test do
 end
 
 gem 'graphiql-rails', group: :development
-gem 'graphql', '~> 2.4'
+gem 'graphql', '~> 2.5'
