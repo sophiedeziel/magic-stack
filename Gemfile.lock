@@ -111,12 +111,12 @@ GEM
       activesupport (>= 6.1.0)
     ffi (1.17.1-x86_64-darwin)
     ffi (1.17.1-x86_64-linux-gnu)
-    fiber-storage (1.0.0)
+    fiber-storage (1.0.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
     graphiql-rails (1.10.4)
       railties
-    graphql (2.5.3)
+    graphql (2.5.4)
       base64
       fiber-storage
       logger
