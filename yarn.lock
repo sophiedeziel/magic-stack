@@ -2533,10 +2533,10 @@ domhandler@^5.0.2, domhandler@^5.0.3:
   dependencies:
     domelementtype "^2.3.0"
 
-dompurify@^3.2.3:
-  version "3.2.4"
-  resolved "https://registry.npmjs.org/dompurify/-/dompurify-3.2.4.tgz"
-  integrity sha512-ysFSFEDVduQpyhzAob/kkuJjf5zWkZD8/A9ywSp1byueyuCfHamrCBa14/Oc2iiB0e51B+NpxSl5gmzn+Ms/mg==
+dompurify@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.2.5.tgz#11b108656a5fb72b24d916df17a1421663d7129c"
+  integrity sha512-mLPd29uoRe9HpvwP2TxClGQBzGXeEC/we/q+bFlmPPmj2p2Ugl3r6ATu/UU1v77DXNcehiBg9zsr1dREyA/dJQ==
   optionalDependencies:
     "@types/trusted-types" "^2.0.7"
 
@@ -6108,12 +6108,12 @@ tree-dump@^1.0.1:
   resolved "https://registry.npmjs.org/tree-dump/-/tree-dump-1.0.2.tgz"
   integrity sha512-dpev9ABuLWdEubk+cIaI9cHwRNNDjkBBLXTwI4UCUFdQ5xXKqNXoK4FEciw/vxf+NQ7Cb7sGUyeUtORvHIdRXQ==
 
-trix@^2.1.13:
-  version "2.1.13"
-  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.13.tgz#499a5f243eb05d44c92f00ee8fdda71f2ec9fad1"
-  integrity sha512-LTwj6HPo/CDL6KSclIwn41J+EwcqXHiUE43BBbg8Q/whaZcoUaODypHYoGIDd3M32KVXw98M5vC6zNCod9KB2w==
+trix@^2.1.14:
+  version "2.1.14"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.14.tgz#c123a8f1ef48e3acc2ef032b10a058e996deb794"
+  integrity sha512-2WaoD7rBkhsqPPpQ5yRaA4xByIHOqns0F4Qim9XytwG2YacwdbPNe4mXAxohMPgsgYpLl1oSFWaLlKUaILigjw==
   dependencies:
-    dompurify "^3.2.3"
+    dompurify "^3.2.5"
 
 ts-invariant@^0.10.3:
   version "0.10.3"
