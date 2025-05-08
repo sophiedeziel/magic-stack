@@ -50,7 +50,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot', '~> 6.5'
   gem 'rspec-its', '~> 2.0'
-  gem 'rspec-rails', '~> 7.1'
+  gem 'rspec-rails', '~> 8.0'
   gem 'rubocop', '~> 1.75'
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-graphql', require: false
