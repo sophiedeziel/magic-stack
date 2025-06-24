@@ -47,16 +47,22 @@ gem 'react_on_rails', '14.2.1'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem 'database_cleaner-active_record'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot', '~> 6.5'
+  gem 'factory_bot_rails', '~> 6.5'
+  gem 'parallel_tests'
+  gem 'rails-controller-testing'
   gem 'rspec-its', '~> 2.0'
-  gem 'rspec-rails', '~> 7.1'
-  gem 'rubocop', '~> 1.75'
+  gem 'rspec-rails', '~> 8.0'
+  gem 'rubocop', '~> 1.77'
+  gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-graphql', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-rspec_rails', require: false
+  gem 'shoulda-matchers', '~> 6.5'
 end
 
 group :development do
@@ -75,7 +81,9 @@ group :test do
   gem 'brakeman', '~> 7.0', require: false
   gem 'bundler-audit', '~> 0.9', require: false
   gem 'capybara'
+  gem 'cucumber-rails', require: false
   gem 'selenium-webdriver'
+  gem 'simplecov', require: false
   gem 'webdrivers'
 end
 

@@ -2,12 +2,13 @@ inherit_mode:
   merge:
     - Exclude
 
-require:
+plugins:
   - rubocop-rails
   - rubocop-graphql
   - rubocop-factory_bot
   - rubocop-rspec
   - rubocop-rspec_rails
+  - rubocop-capybara
 
 AllCops:
   Exclude:
@@ -16,14 +17,23 @@ AllCops:
     - 'script/**/*'
     - 'bin/**/*'
     - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'log/**/*'
+    - 'public/**/*'
+    - 'storage/**/*'
 
   NewCops: enable
+  SuggestExtensions: false
 
 Style/Documentation:
   Enabled: false
 
 Metrics/MethodLength:
   Max: 20
+
+RSpec/MultipleExpectations:
+  Max: 2
 
 GraphQL/ObjectDescription:
   Enabled: true
