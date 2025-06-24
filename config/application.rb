@@ -9,7 +9,10 @@ Bundler.require(*Rails.groups)
 module MagicStack
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
+    config.load_defaults 8.0
+
+    # Configure timezone handling for Rails 8.1 compatibility
+    config.active_support.to_time_preserves_timezone = :zone
 
     config.generators.after_generate do |files|
       parsable_files = files.filter { |file| file.end_with?('.rb') }
