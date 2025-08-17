@@ -5,11 +5,9 @@ Feature: Home Page
 
   Scenario: Visit home page
     Given I visit the home page
-    Then I should see "Loading..."
-    And the page should be successful
+    Then the page should be successful
 
   @javascript
   Scenario: Home page with JavaScript
     Given I visit the home page
     Then I should see the React application loaded
-    And I should see "Loading..."

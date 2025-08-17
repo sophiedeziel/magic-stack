@@ -46,11 +46,11 @@ jobs:
       - name: 'Yarn Install'
         run: yarn install
 
+      - name: Setup test database
+        run: |
+          RAILS_ENV=test bin/rails db:drop db:create db:schema:load || RAILS_ENV=test bin/rails db:prepare
+
       - name: Run tests
-        env:
-          RAILS_ENV: test
-          DB_USER: tentacles_test
-          DB_PASSWORD: tentacles_test
         run: bin/rspec
 
   lint-ruby:
@@ -135,3 +135,71 @@ jobs:
 
       - name: Compile assets (js and css)
         run: bin/rails shakapacker:compile
+
+  cucumber:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+      CI: true
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Enhanced asset cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            **/node_modules
+            public/assets/
+            public/packs-test/
+            tmp/shakapacker
+            tmp/cache/assets
+          key: ${{ runner.os }}-assets-v2-${{ hashFiles('**/yarn.lock', 'Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-assets-v2-
+            ${{ runner.os }}-assets-
+
+      - name: Cache test database schema
+        uses: actions/cache@v4
+        with:
+          path: |
+            db/schema.rb
+            db/structure.sql
+          key: ${{ runner.os }}-schema-${{ hashFiles('db/migrate/*') }}
+
+      - uses: actions/setup-node@v4
+        with:
+          cache: yarn
+          node-version-file: .tool-versions
+
+      - name: 'Yarn Install'
+        run: yarn install --frozen-lockfile
+
+      - name: Setup test database
+        run: |
+          RAILS_ENV=test bin/rails db:drop db:create db:schema:load || RAILS_ENV=test bin/rails db:prepare
+
+      - name: Cache precompiled assets
+        uses: actions/cache@v4
+        with:
+          path: |
+            public/assets
+            public/packs
+          key: ${{ runner.os }}-precompiled-assets-${{ hashFiles('app/assets/**/*', 'app/javascript/**/*', 'config/webpack/**/*', 'yarn.lock', 'Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-precompiled-assets-
+
+      - name: Precompile assets for testing
+        env:
+          RAILS_ENV: test
+          SECRET_KEY_BASE: test_secret_key_base
+        run: bin/rails assets:precompile
+
+      - name: Run Cucumber tests
+        run: bundle exec cucumber
