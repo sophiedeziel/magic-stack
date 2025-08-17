@@ -47,7 +47,7 @@ jobs:
         run: yarn install
 
       - name: Setup test database
-        run: bin/rails db:setup
+        run: bin/rails db:prepare
 
       - name: Run tests
         run: bin/rspec
@@ -185,7 +185,7 @@ jobs:
 
       - name: Setup test database
         run: |
-          bin/rails db:schema:load
+          bin/rails db:prepare
           bin/rails parallel:setup
 
       - name: Precompile assets for testing
