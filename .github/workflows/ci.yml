@@ -138,9 +138,6 @@ jobs:
 
   cucumber:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        group: [1, 2]
     env:
       RAILS_ENV: test
       CI: true
@@ -186,12 +183,7 @@ jobs:
 
       - name: Setup test database
         run: |
-          # Clean up any existing parallel databases first
-          RAILS_ENV=test bin/rails parallel:drop || true
-          # Set up main test database
           RAILS_ENV=test bin/rails db:drop db:create db:schema:load || RAILS_ENV=test bin/rails db:prepare
-          # Set up parallel test databases
-          RAILS_ENV=test bin/rails parallel:setup
 
       - name: Precompile assets for testing
         env:
@@ -199,15 +191,5 @@ jobs:
           SECRET_KEY_BASE: test_secret_key_base
         run: bin/rails assets:precompile
 
-      - name: Run Cucumber tests with parallelization
-        env:
-          CUCUMBER_GROUP: ${{ matrix.group }}
-        run: |
-          # For now, run all features in parallel since we only have one feature file
-          # When more features are added, this can be split by feature directories
-          if [ "${{ matrix.group }}" = "1" ]; then
-            bundle exec parallel_cucumber features/ -n 2
-          else
-            echo "Group ${{ matrix.group }} - no additional features to run yet"
-            # Future: run specific feature directories for this group
-          fi
+      - name: Run Cucumber tests
+        run: bundle exec cucumber
