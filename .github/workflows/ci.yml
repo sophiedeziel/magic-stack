@@ -185,6 +185,16 @@ jobs:
         run: |
           RAILS_ENV=test bin/rails db:drop db:create db:schema:load || RAILS_ENV=test bin/rails db:prepare
 
+      - name: Cache precompiled assets
+        uses: actions/cache@v4
+        with:
+          path: |
+            public/assets
+            public/packs
+          key: ${{ runner.os }}-precompiled-assets-${{ hashFiles('app/assets/**/*', 'app/javascript/**/*', 'config/webpack/**/*', 'yarn.lock', 'Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-precompiled-assets-
+
       - name: Precompile assets for testing
         env:
           RAILS_ENV: test
