@@ -17,21 +17,6 @@ jobs:
     env:
       RAILS_ENV: test
 
-    services:
-      postgres:
-        image: postgres:14
-        env:
-          POSTGRES_USER: tentacles_test
-          POSTGRES_PASSWORD: tentacles_test
-          POSTGRES_DB: tentacles_test
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -62,18 +47,9 @@ jobs:
         run: yarn install
 
       - name: Setup test database
-        env:
-          DB_USER: tentacles_test
-          DB_PASSWORD: tentacles_test
-          DATABASE_URL: postgres://tentacles_test:tentacles_test@localhost:5432/tentacles_test
         run: bin/rails db:setup
 
       - name: Run tests
-        env:
-          RAILS_ENV: test
-          DB_USER: tentacles_test
-          DB_PASSWORD: tentacles_test
-          DATABASE_URL: postgres://tentacles_test:tentacles_test@localhost:5432/tentacles_test
         run: bin/rspec
 
   lint-ruby:
@@ -168,21 +144,6 @@ jobs:
       RAILS_ENV: test
       CI: true
 
-    services:
-      postgres:
-        image: postgres:14
-        env:
-          POSTGRES_USER: tentacles_test
-          POSTGRES_PASSWORD: tentacles_test
-          POSTGRES_DB: tentacles_test
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -223,10 +184,6 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Setup test database
-        env:
-          DB_USER: tentacles_test
-          DB_PASSWORD: tentacles_test
-          DATABASE_URL: postgres://tentacles_test:tentacles_test@localhost:5432/tentacles_test
         run: |
           bin/rails db:schema:load
           bin/rails parallel:setup
@@ -239,10 +196,6 @@ jobs:
 
       - name: Run Cucumber tests with parallelization
         env:
-          RAILS_ENV: test
-          DB_USER: tentacles_test
-          DB_PASSWORD: tentacles_test
-          DATABASE_URL: postgres://tentacles_test:tentacles_test@localhost:5432/tentacles_test
           CUCUMBER_GROUP: ${{ matrix.group }}
         run: |
           # For now, run all features in parallel since we only have one feature file
