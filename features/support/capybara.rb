@@ -17,11 +17,25 @@ end
 # Configure Chrome options for headless testing
 Capybara.register_driver :selenium_chrome_headless do |app|
   options = Selenium::WebDriver::Chrome::Options.new
-  options.add_argument('--headless')
+  options.add_argument('--headless=new') # Use new headless mode for better performance
   options.add_argument('--no-sandbox')
   options.add_argument('--disable-dev-shm-usage')
   options.add_argument('--disable-gpu')
+  options.add_argument('--disable-web-security')
+  options.add_argument('--disable-extensions')
+  options.add_argument('--disable-background-timer-throttling')
+  options.add_argument('--disable-backgrounding-occluded-windows')
+  options.add_argument('--disable-renderer-backgrounding')
   options.add_argument('--window-size=1400,1400')
+
+  # CI-specific optimizations
+  if ENV['CI']
+    options.add_argument('--memory-pressure-off')
+    options.add_argument('--max_old_space_size=4096')
+    options.add_argument('--disable-background-networking')
+    options.add_argument('--disable-default-apps')
+    options.add_argument('--disable-sync')
+  end
 
   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
 end
