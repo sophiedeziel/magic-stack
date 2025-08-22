@@ -81,8 +81,10 @@ group :test do
   gem 'brakeman', '~> 7.1', require: false
   gem 'bundler-audit', '~> 0.9', require: false
   gem 'capybara'
+  gem 'cucumber_github_formatter', require: false
   gem 'cucumber-rails', require: false
   gem 'rspec-github', require: false
+  gem 'rubocop-github-annotations-formatter', require: false
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
   gem 'webdrivers'

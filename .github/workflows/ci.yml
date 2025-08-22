@@ -68,7 +68,7 @@ jobs:
       - name: Security audit application code
         run: bin/brakeman -q -w2
       - name: Lint Ruby files
-        run: bin/rubocop --parallel
+        run: bin/rubocop --parallel --format github
 
   lint-javascript:
     runs-on: ubuntu-latest
@@ -202,4 +202,4 @@ jobs:
         run: bin/rails assets:precompile
 
       - name: Run Cucumber tests
-        run: bundle exec cucumber
+        run: bundle exec cucumber --format CucumberGithubFormatter::Formatter --format pretty
