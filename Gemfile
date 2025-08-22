@@ -82,6 +82,7 @@ group :test do
   gem 'bundler-audit', '~> 0.9', require: false
   gem 'capybara'
   gem 'cucumber-rails', require: false
+  gem 'rspec-github', require: false
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
   gem 'webdrivers'

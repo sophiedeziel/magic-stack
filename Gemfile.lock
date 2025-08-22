@@ -290,6 +290,8 @@ GEM
     rspec-expectations (3.13.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
+    rspec-github (3.0.0)
+      rspec-core (~> 3.0)
     rspec-its (2.0.0)
       rspec-core (>= 3.13.0)
       rspec-expectations (>= 3.13.0)
@@ -432,6 +434,7 @@ DEPENDENCIES
   rails (~> 8.0.2)
   rails-controller-testing
   react_on_rails (= 14.2.1)
+  rspec-github
   rspec-its (~> 2.0)
   rspec-rails (~> 8.0)
   rubocop (~> 1.79)
