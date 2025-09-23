@@ -1071,10 +1071,10 @@
     schema-utils "^4.2.0"
     source-map "^0.7.3"
 
-"@rails/actiontext@^8.0.201":
-  version "8.0.201"
-  resolved "https://registry.npmjs.org/@rails/actiontext/-/actiontext-8.0.201.tgz"
-  integrity sha512-SFo+kFo9SGMP+y4i8yJFyCBpPwrsMwOiGxNiyXqKEqFhqKuEnYyf26vT/u4wygm5lTCW8gexbGuGAahGhhq3pw==
+"@rails/actiontext@^8.0.300":
+  version "8.0.300"
+  resolved "https://registry.yarnpkg.com/@rails/actiontext/-/actiontext-8.0.300.tgz#a5c89ef825f5e1b199456abc86c8f2f746227450"
+  integrity sha512-3uIRBH7SsjlgbpZQTEsgZg9bdH2umdjCoXp02oRF1PzEi/TcOTQD/PXTthkRiXdo0sA6y3PMgJNiPs/JfW4JLQ==
   dependencies:
     "@rails/activestorage" ">= 8.0.0-alpha"
 
