@@ -1071,17 +1071,17 @@
     schema-utils "^4.2.0"
     source-map "^0.7.3"
 
-"@rails/actiontext@^8.0.201":
-  version "8.0.201"
-  resolved "https://registry.npmjs.org/@rails/actiontext/-/actiontext-8.0.201.tgz"
-  integrity sha512-SFo+kFo9SGMP+y4i8yJFyCBpPwrsMwOiGxNiyXqKEqFhqKuEnYyf26vT/u4wygm5lTCW8gexbGuGAahGhhq3pw==
+"@rails/actiontext@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@rails/actiontext/-/actiontext-8.1.0.tgz#6e783128a8ec5ba61e149727d9075d6138224d65"
+  integrity sha512-N5liu+rVlYQixDGydzm+TnT1N5dsgwvSjk1EL8Frnzp0girTWAVU5LjJa7k2g63RxoPcY4S7JZhnjoyJw4ocJA==
   dependencies:
-    "@rails/activestorage" ">= 8.0.0-alpha"
+    "@rails/activestorage" ">= 8.1.0-alpha"
 
-"@rails/activestorage@>= 8.0.0-alpha":
-  version "8.0.1"
-  resolved "https://registry.npmjs.org/@rails/activestorage/-/activestorage-8.0.1.tgz"
-  integrity sha512-LBLMOVL+nGTyiSyrLhikSCVr7lPLOmkGKELR8NxaoneIV4+QICvhe+AYVuklhJcMIN21WK7M1SzwItv9mSXX4A==
+"@rails/activestorage@>= 8.1.0-alpha":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-8.1.0.tgz#f4b76e73ee5de59923c7395efb7ce63679866ada"
+  integrity sha512-D2T6flCX+W3dGMzqHNikVgw1D1xpVb5wvxnQB/naHUpxgZ55Ch4D8yb246umSA3SDvk4qhuwU7knQF79VMG/Eg==
   dependencies:
     spark-md5 "^3.0.1"
 
