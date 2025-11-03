@@ -62,7 +62,7 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-rspec_rails', require: false
-  gem 'shoulda-matchers', '~> 6.5'
+  gem 'shoulda-matchers', '~> 7.0'
 end
 
 group :development do
