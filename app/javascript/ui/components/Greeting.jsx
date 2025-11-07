@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import * as style from './Greeting.module.css'
+import { bold, bright } from './Greeting.module.css'
 
 import { useQuery, gql } from '@apollo/client'
 
@@ -18,14 +18,14 @@ export default function Greeting () {
 
   return (
     <div>
-      <h3 className={style.bold}>{data.testField}, {name}!</h3>
+      <h3 className={bold}>{data.testField}, {name}!</h3>
       <hr />
       <form>
-        <label className={style.bright} htmlFor="name">
+        <label className={bright} htmlFor="name">
 
           <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
         </label>
       </form>
     </div>
   )
-};
+}
