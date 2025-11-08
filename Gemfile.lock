@@ -230,7 +230,7 @@ GEM
       date
       stringio
     public_suffix (6.0.2)
-    puma (7.0.3)
+    puma (7.1.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.4)
@@ -444,7 +444,7 @@ DEPENDENCIES
   image_processing (~> 1.14)
   jbuilder
   parallel_tests
-  puma (~> 7.0)
+  puma (~> 7.1)
   rails (~> 8.1.1)
   rails-controller-testing
   react_on_rails (~> 16.1)
