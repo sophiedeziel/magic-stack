@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { ApolloClient, InMemoryCache } from '@apollo/client'
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
 import { ApolloProvider } from '@apollo/client/react'
 
 import Router from './Router'
 
 function App (props, railsContext) {
   const client = new ApolloClient({
-    uri: '/graphql',
+    link: new HttpLink({ uri: '/graphql' }),
     cache: new InMemoryCache(),
     ssrMode: railsContext.ssrMode
   })
