@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { bold, bright } from './Greeting.module.css'
 
-import { useQuery, gql } from '@apollo/client'
+import { gql } from '@apollo/client'
+import { useQuery } from '@apollo/client/react'
 
 const GET_TEST_STRING = gql`
   query TestField {

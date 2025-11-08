@@ -1,6 +1,5 @@
 {
   "name": "app",
-  "type": "module",
   "packageManager": "yarn@1.22.22",
   "private": true,
   "dependencies": {
@@ -46,9 +45,11 @@
   ],
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@swc/core": "^1.15.0",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.5.0",
     "react-refresh": "^0.18.0",
+    "swc-loader": "^0.2.6",
     "webpack-dev-server": "5"
   }
 }

@@ -8,6 +8,9 @@ default: &default
   cache_path: tmp/shakapacker
   webpack_compile_output: true
 
+  # Use babel for JavaScript transpilation (was webpack_loader in v8)
+  javascript_transpiler: babel
+
   # Additional paths webpack should lookup modules
   # ['app/assets', 'engine/foo/app/assets']
   additional_paths: []
