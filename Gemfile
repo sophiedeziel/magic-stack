@@ -55,7 +55,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rspec-its', '~> 2.0'
   gem 'rspec-rails', '~> 8.0'
-  gem 'rubocop', '~> 1.80'
+  gem 'rubocop', '~> 1.81'
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-graphql', require: false
