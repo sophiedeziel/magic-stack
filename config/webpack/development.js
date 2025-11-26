@@ -15,9 +15,7 @@ const developmentEnvOnly = (clientWebpackConfig, _serverWebpackConfig) => {
     const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
     clientWebpackConfig.plugins.push(
       new ReactRefreshWebpackPlugin({
-        overlay: {
-          sockPort: devServer.port,
-        },
+        overlay: true,
       }),
     );
   }
