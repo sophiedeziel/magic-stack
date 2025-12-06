@@ -2,6 +2,9 @@
   "name": "app",
   "packageManager": "yarn@1.22.22",
   "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow yarn"
+  },
   "dependencies": {
     "@apollo/client": "^4.0.9",
     "@babel/core": "7.28.5",
