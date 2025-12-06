@@ -2,6 +2,9 @@
   "name": "app",
   "packageManager": "yarn@1.22.22",
   "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow yarn"
+  },
   "dependencies": {
     "@apollo/client": "^4.0.9",
     "@babel/core": "7.28.5",
@@ -51,5 +54,8 @@
     "react-refresh": "^0.18.0",
     "swc-loader": "^0.2.6",
     "webpack-dev-server": "5"
+  },
+  "resolutions": {
+    "on-headers": "^1.1.0"
   }
 }
