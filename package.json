@@ -48,7 +48,7 @@
   ],
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.6.2",
-    "@swc/core": "^1.15.3",
+    "@swc/core": "^1.15.4",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.5.0",
     "react-refresh": "^0.18.0",
