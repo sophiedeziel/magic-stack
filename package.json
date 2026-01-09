@@ -12,7 +12,7 @@
     "@babel/preset-env": "7.28.5",
     "@babel/preset-react": "^7.28.5",
     "@babel/runtime": "7",
-    "@rails/actiontext": "^8.1.100",
+    "@rails/actiontext": "^8.1.200",
     "babel-loader": "10",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
