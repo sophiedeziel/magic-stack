@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '~> 3.3'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 8.1.1'
+gem 'rails', '~> 8.1.2'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -15,7 +15,7 @@ gem 'sprockets-rails'
 gem 'sqlite3', '~> 2.9'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem 'puma', '~> 7.1'
+gem 'puma', '~> 7.2'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
@@ -41,9 +41,9 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 1.14'
 
-gem 'shakapacker', '~> 9.4'
+gem 'shakapacker', '~> 9.5'
 
-gem 'react_on_rails', '~> 16.1'
+gem 'react_on_rails', '~> 16.2'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -55,7 +55,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rspec-its', '~> 2.0'
   gem 'rspec-rails', '~> 8.0'
-  gem 'rubocop', '~> 1.82'
+  gem 'rubocop', '~> 1.84'
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-graphql', require: false
@@ -78,7 +78,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'brakeman', '~> 7.1', require: false
+  gem 'brakeman', '~> 8.0', require: false
   gem 'bundler-audit', '~> 0.9', require: false
   gem 'capybara'
   gem 'cucumber_github_formatter', require: false
@@ -87,7 +87,7 @@ group :test do
   gem 'rubocop-github-annotations-formatter', require: false
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
-  gem 'webdrivers'
+  # Removed 'webdrivers' - Selenium 4.11+ has built-in Selenium Manager for driver downloads
 end
 
 gem 'graphiql-rails', group: :development
