@@ -13,7 +13,7 @@
 
 ### Development Commands
 - `bin/dev` - Starts the development server
-- `bin/checks` - Runs all tests and quality checks
+- `bin/check` - Runs all tests and quality checks
 
 ### Testing Commands
 - `bundle exec rspec` - Run Ruby/Rails tests
@@ -45,7 +45,7 @@
 
 2. **Make changes**: Implement the required functionality
 
-3. **Run quality checks**: Use `bin/checks` before committing
+3. **Run quality checks**: Use `bin/check` before committing
 
 4. **Commit changes**: Only after all quality gates pass
    ```bash
@@ -80,7 +80,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - [ ] New features have appropriate tests
 - [ ] No hardcoded secrets or sensitive data
 
-**Use `bin/checks` to run all quality gates at once**
+**Use `bin/check` to run all quality gates at once**
 
 ### Testing Requirements
 - All new Ruby code must have RSpec unit tests
