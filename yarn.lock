@@ -4763,10 +4763,10 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-on-rails@16.2.1:
-  version "16.2.1"
-  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-16.2.1.tgz#174874739e5891676414e110bf02a8a92b138761"
-  integrity sha512-47hZ5y69sU6H8RK8H0RDBvBnl4N314DibxsmRVtFIKeoIvvd6nlPyNCqp54jgNehB/mA15VG2H7EeVMHL0u8kA==
+react-on-rails@16.3.0:
+  version "16.3.0"
+  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-16.3.0.tgz#be787eba16df1b45a5d93a444fbdaef26807900f"
+  integrity sha512-vMBniBBldXt/a85jyv9FZAG4xkxrLBBuA1Sr3751/bozskrVgOMX7tKy9yoyLuFy6cv8O+tHsPadXK4K5MtD+Q==
 
 react-refresh@^0.18.0:
   version "0.18.0"
