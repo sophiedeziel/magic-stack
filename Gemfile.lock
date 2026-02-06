@@ -282,7 +282,7 @@ GEM
       erb
       psych (>= 4.0.0)
       tsort
-    react_on_rails (16.2.1)
+    react_on_rails (16.3.0)
       addressable
       connection_pool
       execjs (~> 2.5)
@@ -445,7 +445,7 @@ DEPENDENCIES
   puma (~> 7.2)
   rails (~> 8.1.2)
   rails-controller-testing
-  react_on_rails (~> 16.2)
+  react_on_rails (~> 16.3)
   rspec-github
   rspec-its (~> 2.0)
   rspec-rails (~> 8.0)
