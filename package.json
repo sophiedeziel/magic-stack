@@ -32,7 +32,7 @@
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "5",
     "trix": "^2.1.16",
-    "webpack": "5.105.1",
+    "webpack": "5.105.2",
     "webpack-assets-manifest": "6.5.0",
     "webpack-cli": "6",
     "webpack-merge": "6"
