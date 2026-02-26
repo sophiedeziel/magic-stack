@@ -19,7 +19,7 @@
     "compression-webpack-plugin": "11",
     "css-loader": "^7.1.4",
     "css-minimizer-webpack-plugin": "^7.0.4",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.2",
     "graphql": "^16.13.0",
     "mini-css-extract-plugin": "^2.10.0",
     "prop-types": "^15.8.1",
