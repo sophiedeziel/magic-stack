@@ -34,7 +34,7 @@
     "trix": "^2.1.17",
     "webpack": "5.105.4",
     "webpack-assets-manifest": "6.5.1",
-    "webpack-cli": "6",
+    "webpack-cli": "7",
     "webpack-merge": "6"
   },
   "version": "0.1.0",
