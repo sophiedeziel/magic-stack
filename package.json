@@ -50,7 +50,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.6.2",
     "@swc/core": "^1.15.33",
     "eslint-plugin-react": "^7.37.5",
-    "globals": "^17.5.0",
+    "globals": "^17.6.0",
     "react-refresh": "^0.18.0",
     "swc-loader": "^0.2.7",
     "tslib": "2",
