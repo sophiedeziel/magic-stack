@@ -54,7 +54,7 @@
     "react-refresh": "^0.18.0",
     "swc-loader": "^0.2.7",
     "tslib": "2",
-    "webpack-dev-server": "5.2.3"
+    "webpack-dev-server": "5.2.4"
   },
   "resolutions": {
     "on-headers": "^1.1.0"
