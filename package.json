@@ -33,7 +33,7 @@
     "terser-webpack-plugin": "5",
     "trix": "^2.1.19",
     "webpack": "5.107.1",
-    "webpack-assets-manifest": "6.5.1",
+    "webpack-assets-manifest": "6.5.2",
     "webpack-cli": "7",
     "webpack-merge": "6"
   },
